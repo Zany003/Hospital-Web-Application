@@ -1,0 +1,130 @@
+/* Reset and Global Styles */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #2d3748;
+    line-height: 1.6;
+    /* font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Content Sections */
+
+
+/* Carousel container */
+.carousel {
+    width: 100%;
+    height: 762px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide extra content */
+    position: relative;
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Slides container */
+.slides {
+    width: 100%;
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+/* Each image */
+.slide-image {
+    width: 100%;
+    max-width: 1490px; /* Match your image width */
+    object-fit: cover;
+    display: none; /* Initially hide all images */
+    position: absolute; /* Make only one visible */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the images */
+}
+
+/* Show the active slide */
+.slide-image.active {
+    display: block; /* Show the active image */
+}
+
+
+
+.choose-us {
+    padding: 3rem 2rem;
+}
+
+.choose-us h2 {
+    color: #2c5282;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.choose-us ul {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.choose-us li {
+    padding: 1rem;
+    background: #ebf8ff;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.choose-us li:hover {
+    transform: translateY(-2px);
+}
+
+.choose-us-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: none;
+}
+
+
+/* Statistics */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 2rem;
+    background: #2c5282;
+    color: #ffffff;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.divider {
+    height: 50px;
+    width: 2px;
+    background: #ffffff;
+}
+
+
+/*  Media Queries */
+
+@media (max-width: 480px) {
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+}

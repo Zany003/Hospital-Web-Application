@@ -1,0 +1,204 @@
+/* Hero Section */
+.about-us {
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(to right, #145488, #4893d1);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-us .content {
+    width: 100%;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us .text-content {
+    flex: 1;
+    color: white;
+    z-index: 2;
+}
+
+.about-us .text-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about-us .text-content span {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.about-us .text-content span b {
+    font-weight: 600;
+}
+
+.about-us .image-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 45%;
+    overflow: hidden;
+    border-radius: 0 0 0 150px;
+}
+
+.about-us .image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Welcome Section */
+.welcome {
+    padding: 60px 5%;
+    background: #fff;
+}
+
+.welcome h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.about1 {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.about1 p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Vision, Mission, Values Section */
+.about2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.about2 > div {
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about2 h2 {
+    color: #2c5282;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.about2 p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.about2 ol {
+    padding-left: 20px;
+}
+
+.about2 li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Board of Directors Section */
+.board-of-directors {
+    padding: 60px 5%;
+    background: #669dbd;
+}
+
+.board-of-directors h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.board-of-directors {
+    padding: 20px;
+  }
+  
+  .directors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px;
+    padding: 20px;
+  
+  }
+  
+  .card:hover{
+    transition: transform 0.5s ease;
+    transform: translateY(-2px);
+  }
+  
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+  }
+  
+  .card h2 {
+    font-size: 1.2rem;
+    color: #203a5a;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .directors-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us .image-content {
+        width: 100%;
+        opacity: 0.3;
+        border-radius: 0;
+    }
+    
+    .about-us .text-content {
+        position: relative;
+    }
+
+    .about2 {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .card img {
+        height: auto;
+    }
+}

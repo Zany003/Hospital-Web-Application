@@ -1,0 +1,124 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5vh;
+    background: linear-gradient(135deg, #008cff 25%, #2233f1 100%);
+}
+
+/* Header styles */
+h1,h2 {
+    color: white;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Main content styles */
+main {
+    width: 100%;
+    max-width: 450px;
+    padding: 0 20px;
+}
+
+/* Section/Form container */
+.section {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Label styles */
+label {
+    display: block;
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+/* Input field styles */
+input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #004cff;
+    box-shadow: 0 0 0 2px rgba(255, 0, 255, 0.1);
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 0.85rem;
+    margin-top: 0.5rem;
+    background: #3272da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #1450b1;
+    transform: translateY(-1px);
+}
+
+
+
+
+/* Error message styles */
+.error-message {
+    color: #ff3333;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    body {
+        padding-top: 3vh;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section {
+        padding: 1.5rem;
+    }
+
+    button {
+        padding: 0.75rem;
+    }
+}

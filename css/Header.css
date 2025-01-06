@@ -1,0 +1,184 @@
+body {
+    color: #2d3748;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Reset and Global Styles */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Layout Utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header Components */
+.logo-container {
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    max-height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.emergency-contact {
+    background: #dc2626;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.emergency-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#head {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quick-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quick-links .button {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #007BFF; /* Base blue color */
+    padding: 12px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+    
+}
+
+.quick-links .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Blinking animation for Make An Appointment */
+.blink {
+    animation: blinkEffect 2s infinite;
+}
+
+/* Smooth blinking effect */
+@keyframes blinkEffect {
+    0%, 100% {
+        background-color: #007BFF; /* Base blue */
+        box-shadow: 0 0 10px #007BFF, 0 0 20px #007BFF;
+    }
+    50% {
+        background-color: #0056b3; /* Darker blue */
+        box-shadow: 0 0 15px #0056b3, 0 0 30px #0056b3;
+    }
+}
+
+
+
+/* #head {
+    background: #2c5282;
+    padding: 0.5rem;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none;
+    padding-right: 2rem;
+}
+
+.quick-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.quick-links a:hover {
+    opacity: 0.8;
+} */
+
+/* Main Header */
+header {
+    background: #ebf8ff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #2c5282;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 0.5rem;
+}
+
+header h3 {
+    color: #4299e1;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #2c5282;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #4299e1;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/*  Media Queries */
+@media (max-width: 768px) {
+    .quick-links {
+        justify-content: center;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

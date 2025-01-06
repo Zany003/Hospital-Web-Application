@@ -1,0 +1,152 @@
+.BillPayments {
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(to right, #145488, #4893d1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+.BillPayments .content {
+    width: 100%;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.BillPayments .text-content {
+    flex: 1;
+    color: white;
+    z-index: 2;
+  }
+  
+.BillPayments .text-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+  
+.BillPayments .text-content span {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+  
+.Services .text-content span b {
+    font-weight: 600;
+}
+
+.BillPayments .image-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 45%;
+    overflow: hidden;
+    border-radius: 0 0 0 150px;
+}
+  
+.BillPayments .image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* inputs */
+
+h2 {
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+form {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #4893d1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-image: url(../src/16.jpg);
+}
+
+.HI{
+color: #cf2929;
+}
+
+.payment, .bill {
+    margin-bottom: 30px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="email"], 
+.form-group input[type="number"], 
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+    box-sizing: border-box;
+}
+
+/* Form Row Styling */
+.form-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #3268a2;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #21456c;
+}
+
+
+@media (max-width: 768px) {
+    .BillPayments .image-content {
+        width: 100%;
+        opacity: 0.3;
+        border-radius: 0;
+    }
+}

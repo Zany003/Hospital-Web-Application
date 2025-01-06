@@ -1,0 +1,223 @@
+/* Hero Section */
+.Careers {
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(to right, #145488, #4893d1);
+    position: relative;
+    overflow: hidden;
+}
+
+.Careers .content {
+    width: 100%;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Careers .text-content {
+    flex: 1;
+    color: white;
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Careers .text-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.Careers .text-content span {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.Careers .text-content span b {
+    font-weight: 600;
+}
+
+.Careers .image-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 45%;
+    overflow: hidden;
+    border-radius: 0 0 0 150px;
+}
+
+.Careers .image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.Career-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.Career-container h1, h2, h3 {
+    color: #004b8d;
+}
+
+.Career-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.Career-container h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+.Career-container  h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .Career-container p {
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  .Career-container ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+
+  .Career-container  ul li {
+    margin-bottom: 10px;
+  }
+  
+  .Career-container strong {
+    color: #000000b3;
+  }
+
+
+  /* vacancies cards */
+
+  .vacancies-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .vacancies-container h1{
+    color: #004b8d;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .vacancies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .vacancy-card {
+    background-color: #c0e2ed;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+  }
+
+  .vacancy-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #004b8dd2;
+    
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+.details-button,
+.apply-button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.details-button {
+    background-color: #fff;
+    color: #004b8d;
+    border: 1px solid #004b8d;
+  }
+  
+  .details-button:hover {
+    background-color: #004b8ddc;
+    color: #fff;
+  }
+  
+  .apply-button {
+    background-color: #004b8da6;
+    color: #fff;
+  }
+  
+  .apply-button:hover {
+    background-color: #004b8ddc;
+  }
+
+
+  /* activities */
+  .activities-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+}
+
+.activities-container h2 {
+    font-size: 1.8rem;
+    color: #004680;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.activities-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.activities-container ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.activities-container ul li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.activities, .benefits {
+    margin-bottom: 30px;
+}
+
+.activities h2, .benefits h2 {
+    font-weight: bold;
+}
+
+.activities ul li, .benefits ul li {
+    line-height: 1.5;
+}
